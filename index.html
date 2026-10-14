@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reclutamiento: El Despertar del Prisma Sombra</title>
+<style>
+  body{font-family:system-ui,sans-serif;max-width:640px;margin:auto;padding:16px;line-height:1.5;background:#14141c;color:#eee}
+  h1,h2{line-height:1.2}
+  fieldset{border:1px solid #444;margin:20px 0;padding:12px 16px}
+  legend{font-weight:bold;padding:0 6px}
+  label{display:block;margin:6px 0}
+  input[type=text],input[type=number],input[type=tel],textarea{display:block;width:100%;padding:8px;margin:4px 0 12px;background:#222;color:#fff;border:1px solid #555;border-radius:4px;font:inherit}
+  blockquote{border-left:4px solid #7b4fc0;margin:0 0 20px;padding:0 12px;font-style:italic}
+  .clan{border-left:4px solid #888;padding-left:10px;margin:12px 0}
+  .nivel label{display:inline-block;margin-right:10px}
+  small{color:#aaa}
+  button{padding:10px 20px;font-size:1rem;cursor:pointer}
+  button:disabled{opacity:.6;cursor:wait}
+  #gracias{font-size:1.2rem;padding:16px;border:1px solid #3f6e25;background:#1b2a14}
+</style>
+</head>
+<body>
+
+<h1>El Despertar del Prisma Sombra</h1>
+<blockquote>
+  Durante eras, el mundo de Bedrock permaneció equilibrado por el Prisma Sombra, un artefacto ancestral que fragmentaba la luz original en ciclos perfectos. Sin embargo, la fractura del núcleo desató energías caóticas sobre el reino. De las cenizas emergieron cuatro fuerzas opuestas, cada una buscando reclamar el control de los recursos y dominar la nueva era. La supervivencia y la hegemonía del mundo dependerán de qué camino elijas.
+</blockquote>
+
+<form>
+
+<!-- SECCIÓN 1 -->
+<fieldset>
+  <legend>1. Información personal y de contacto</legend>
+  <label>Gamertag / Nickname (Bedrock)
+    <input type="text" name="Gamertag" required></label>
+  <label>Usuario de Discord (ej. @usuario)
+    <input type="text" name="Discord" required></label>
+  <label>WhatsApp (con código de país)
+    <input type="tel" name="WhatsApp" required></label>
+  <label>Edad
+    <input type="number" name="Edad" min="5" max="99" required></label>
+  <p>Plataforma de juego (Bedrock Edition)</p>
+  <label><input type="radio" name="Plataforma" value="Móvil (Android / iOS)" required> Móvil (Android / iOS)</label>
+  <label><input type="radio" name="Plataforma" value="Laptop / PC (Windows 10/11)"> Laptop / PC (Windows 10/11)</label>
+  <label><input type="radio" name="Plataforma" value="Consola (Xbox, PlayStation, Switch)"> Consola (Xbox, PlayStation, Nintendo Switch)</label>
+</fieldset>
+
+<!-- SECCIÓN 2 -->
+<fieldset>
+  <legend>2. Lore de los clanes y elección de facción</legend>
+
+  <div class="clan"><strong>La Hermandad Oscura</strong> (líder por definir)<br>
+    Nacidos entre las sombras y las ruinas del antiguo mundo, no rinden cuentas a ningún rey ni dios. Creen que las alianzas son debilidades y prefieren vagar en soledad, dominando el sigilo y la autosuficiencia. Juegan solos y no forman equipo con nadie.</div>
+  <div class="clan"><strong>Facción Solar</strong> (líder: MoisesklkRD)<br>
+    Fieles seguidores de la luz radiante y la prosperidad social. Creen en la fuerza de la comunidad, las megaestructuras cooperativas y la protección mutua. Su objetivo es construir un imperio próspero e inquebrantable.</div>
+  <div class="clan"><strong>Facción Lunar</strong> (líder por definir)<br>
+    Sabios observadores de la noche y domadores del misterio. Se enfocan en el conocimiento, la exploración sigilosa y el dominio táctico bajo la penumbra. Priorizan la inteligencia sobre la fuerza bruta.</div>
+  <div class="clan"><strong>Facción Eclipse</strong> (líder por definir)<br>
+    Guerreros del punto de equilibrio entre la luz y la oscuridad. Abrazan el caos controlado: estrategas militares y mercenarios que equilibran las balanzas mediante el combate, la diplomacia volátil y las incursiones.</div>
+
+  <p>¿A qué clan te gustaría unirte?</p>
+  <label><input type="radio" name="Clan elegido" value="La Hermandad Oscura" required> La Hermandad Oscura</label>
+  <label><input type="radio" name="Clan elegido" value="Facción Solar"> Facción Solar</label>
+  <label><input type="radio" name="Clan elegido" value="Facción Lunar"> Facción Lunar</label>
+  <label><input type="radio" name="Clan elegido" value="Facción Eclipse"> Facción Eclipse</label>
+
+  <p>¿Quieres postularte como líder de una facción sin líder? <small>(opcional)</small></p>
+  <label><input type="radio" name="Postulación a líder" value="No desea postularse" checked> No deseo postularme</label>
+  <label><input type="radio" name="Postulación a líder" value="Líder de La Hermandad Oscura"> Líder de La Hermandad Oscura</label>
+  <label><input type="radio" name="Postulación a líder" value="Líder de la Facción Lunar"> Líder de la Facción Lunar</label>
+  <label><input type="radio" name="Postulación a líder" value="Líder de la Facción Eclipse"> Líder de la Facción Eclipse</label>
+
+  <label>Si te postulaste, escribe tu propuesta de gobierno y estrategia <small>(opcional)</small>
+    <textarea name="Propuesta de liderazgo" rows="4"></textarea></label>
+</fieldset>
+
+<!-- SECCIÓN 3 -->
+<fieldset>
+  <legend>3. Experiencia y perfil de jugador</legend>
+  <p>¿Cuánto tiempo llevas jugando Minecraft Bedrock?</p>
+  <label><input type="radio" name="Tiempo jugando" value="Menos de 6 meses" required> Menos de 6 meses</label>
+  <label><input type="radio" name="Tiempo jugando" value="6 meses a 1 año"> De 6 meses a 1 año</label>
+  <label><input type="radio" name="Tiempo jugando" value="1 a 3 años"> De 1 a 3 años</label>
+  <label><input type="radio" name="Tiempo jugando" value="Más de 3 años"> Más de 3 años</label>
+
+  <label>¿Cuántas horas juegas a la semana aproximadamente?
+    <input type="number" name="Horas por semana" min="0" max="168" required></label>
+
+  <p>Nivel de habilidad general (1 a 10)</p>
+  <div class="nivel">
+    <label><input type="radio" name="Nivel (1-10)" value="1" required>1</label>
+    <label><input type="radio" name="Nivel (1-10)" value="2">2</label>
+    <label><input type="radio" name="Nivel (1-10)" value="3">3</label>
+    <label><input type="radio" name="Nivel (1-10)" value="4">4</label>
+    <label><input type="radio" name="Nivel (1-10)" value="5">5</label>
+    <label><input type="radio" name="Nivel (1-10)" value="6">6</label>
+    <label><input type="radio" name="Nivel (1-10)" value="7">7</label>
+    <label><input type="radio" name="Nivel (1-10)" value="8">8</label>
+    <label><input type="radio" name="Nivel (1-10)" value="9">9</label>
+    <label><input type="radio" name="Nivel (1-10)" value="10">10</label>
+  </div>
+
+  <p>¿En qué te destacas más? (puedes marcar varias)</p>
+  <label><input type="checkbox" name="Especialidad" value="Construcción"> Construcción</label>
+  <label><input type="checkbox" name="Especialidad" value="PvP"> PvP (combate entre jugadores)</label>
+  <label><input type="checkbox" name="Especialidad" value="Redstone"> Redstone y mecanismos</label>
+  <label><input type="checkbox" name="Especialidad" value="Granjas / Automatización"> Granjas de recursos / Automatización</label>
+  <label><input type="checkbox" name="Especialidad" value="Supervivencia / Recolección"> Supervivencia / Recolección de materiales</label>
+  <label><input type="checkbox" name="Especialidad" value="Exploración / Minería"> Exploración / Minería</label>
+
+  <p>¿Cómo prefieres jugar habitualmente?</p>
+  <label><input type="radio" name="Forma de jugar" value="Solo" required> Solo (autónomo, sin depender de un equipo)</label>
+  <label><input type="radio" name="Forma de jugar" value="En equipo"> En equipo (cooperativo, compartiendo recursos y bases)</label>
+  <label><input type="radio" name="Forma de jugar" value="Mixto"> Mixto (solo, pero colaboro en proyectos grupales)</label>
+</fieldset>
+
+<!-- SECCIÓN 4 -->
+<fieldset>
+  <legend>4. Addons para el servidor (15 jugadores)</legend>
+  <p><small>Opcional. Marca los que quieras votar.</small></p>
+  <label><input type="checkbox" name="Addons" value="Factions / Clans System"> <b>Factions / Clans System:</b> comandos e interfaz de reclamos de terreno, protección de cofres y guerras entre facciones.</label>
+  <label><input type="checkbox" name="Addons" value="Simple Waystones"> <b>Simple Waystones:</b> piedras de teletransporte entre bases y biomas lejanos.</label>
+  <label><input type="checkbox" name="Addons" value="Gravestone / Last Death Location"> <b>Gravestone / Last Death Location:</b> tumba con tus pertenencias al morir y guarda las coordenadas.</label>
+  <label><input type="checkbox" name="Addons" value="Vein Miner / Tree Capitator"> <b>Vein Miner / Tree Capitator:</b> rompe vetas o árboles completos con un solo bloque.</label>
+  <label><input type="checkbox" name="Addons" value="Player / Mob Head Drops"> <b>Player / Mob Head Drops:</b> cabezas de jugadores vencidos en PvP o de mobs eliminados.</label>
+  <label><input type="checkbox" name="Addons" value="More Weapons & Armor++"> <b>More Weapons &amp; Armor++:</b> nuevas armas, herramientas y armaduras niveladas.</label>
+  <label><input type="checkbox" name="Addons" value="Another Furniture Addon"> <b>Another Furniture Addon:</b> cientos de muebles y elementos decorativos.</label>
+  <label><input type="checkbox" name="Addons" value="Food Expansion / Mega Delight"> <b>Food Expansion / Mega Delight:</b> más de 100 recetas de cocina y cultivos.</label>
+  <label><input type="checkbox" name="Addons" value="Better Animations / Cosmetic Pack"> <b>Better Animations / Cosmetic Pack:</b> mejores animaciones, capa y posturas sin afectar el rendimiento.</label>
+  <label><input type="checkbox" name="Addons" value="Spark / Performance Profiler"> <b>Spark / Performance Profiler:</b> optimización del servidor para reducir el lag.</label>
+
+  <label>¿Otro addon que no esté en la lista? (nombre y función) <small>(opcional)</small>
+    <textarea name="Otro addon" rows="2"></textarea></label>
+</fieldset>
+
+<!-- SECCIÓN 5 -->
+<fieldset>
+  <legend>5. Reglas, disponibilidad y compromiso</legend>
+  <label>Horarios habituales de juego (horas libres y zona horaria)
+    <textarea name="Horarios" rows="2" required></textarea></label>
+
+  <p>¿Aceptas cumplir las normas de convivencia, no usar hacks / exploits y respetar los límites de cada facción?</p>
+  <label><input type="radio" name="Acuerdo con las reglas" value="Sí, acepto todas las reglas" required> Sí, acepto todas las reglas</label>
+  <label><input type="radio" name="Acuerdo con las reglas" value="No estoy de acuerdo"> No estoy de acuerdo</label>
+
+  <label>¿Qué harías si ves a un jugador haciendo trampas o rompiendo las reglas?
+    <textarea name="Si ve trampas" rows="3" required></textarea></label>
+
+  <label>Notas o aclaraciones adicionales <small>(opcional)</small>
+    <textarea name="Notas" rows="3"></textarea></label>
+</fieldset>
+
+<button type="submit">Enviar ficha</button>
+</form>
+
+<p id="gracias" hidden>Ficha enviada. Te contactaremos pronto.</p>
+
+<details style="margin-top:30px">
+  <summary>Glosario técnico</summary>
+  <dl>
+    <dt><b>Lore</b></dt><dd>Leyendas, acontecimientos y narrativa que dan contexto al mundo y a los clanes.</dd>
+    <dt><b>Addon</b></dt><dd>Paquete de recursos y comportamientos que añade o modifica contenido en Minecraft Bedrock sin cliente modificado.</dd>
+    <dt><b>Waystones</b></dt><dd>Bloques que permiten viajar rápido entre ubicaciones guardadas.</dd>
+    <dt><b>Exploit</b></dt><dd>Uso indebido de errores del juego para obtener ventajas injustas.</dd>
+    <dt><b>Checkbox / Radiobutton</b></dt><dd>Elementos HTML de selección múltiple (checkbox) o única (radio).</dd>
+  </dl>
+</details>
+
+<script>
+// Configuración de credenciales de Telegram
+const TELEGRAM_TOKEN = '8801802991:AAHQZk9e8mJMK1ftFfDjDsyuBG24r-r8v4A'; // Token otorgado por BotFather[span_2](start_span)[span_2](end_span)
+const CHAT_ID = '6593323518'; // Tu Chat ID personal[span_3](start_span)[span_3](end_span)
+
+// Event listener para manejar el envío del formulario
+document.getElementById('formularioReclutamiento').addEventListener('submit', async function(event) {
+  event.preventDefault(); // Evita que la página web se recargue
+
+  // 1. Captura de datos personales y de contacto
+  const gamertag = document.getElementById('gamertag').value;
+  const discord = document.getElementById('discord').value;
+  const whatsapp = document.getElementById('whatsapp').value;
+  const edad = document.getElementById('edad').value;
+  const plataforma = document.getElementById('plataforma').value;
+
+  // 2. Selección de clan y liderazgo
+  const clan = document.getElementById('clan').value;
+  const postulacionLider = document.getElementById('postulacionLider').value || 'No se postuló';
+  const propuestaLider = document.getElementById('propuestaLider').value || 'N/A';
+
+  // 3. Experiencia y perfil de jugador
+  const tiempoJugando = document.getElementById('tiempoJugando').value;
+  const horasSemanales = document.getElementById('horasSemanales').value;
+  const nivelHabilidad = document.getElementById('nivelHabilidad').value;
+  const estiloJuego = document.getElementById('estiloJuego').value;
+
+  // Captura de especialidades (Checkbox / Selección múltiple)
+  const especialidadesElementos = document.querySelectorAll('input[name="especialidad"]:checked');
+  const especialidades = Array.from(especialidadesElementos).map(el => el.value).join(', ') || 'Ninguna seleccionada';
+
+  // 4. Selección de Addons (Checkbox / Selección múltiple)
+  const addonsElementos = document.querySelectorAll('input[name="addons"]:checked');
+  const addonsVotados = Array.from(addonsElementos).map(el => el.value).join('\n• ') || 'Ninguno';
+  const otroAddon = document.getElementById('otroAddon').value || 'Ninguno';
+
+  // 5. Disponibilidad y conducta
+  const horarios = document.getElementById('horarios').value;
+  const aceptaReglas = document.getElementById('aceptaReglas').value;
+  const reaccionConflicto = document.getElementById('reaccionConflicto').value;
+  const notasAdicionales = document.getElementById('notasAdicionales').value || 'Ninguna';
+
+  // 6. Construcción del mensaje con formato HTML para Telegram
+  const textoMensaje = `
+📜 <b>NUEVA POSTULACIÓN AL SERVIDOR</b>
+
+👤 <b>INFORMACIÓN PERSONAL:</b>
+• <b>Gamertag:</b> ${gamertag}
+• <b>Discord:</b> ${discord}
+• <b>WhatsApp:</b> ${whatsapp}
+• <b>Edad:</b> ${edad} años
+• <b>Plataforma:</b> ${plataforma}
+
+🛡️ <b>SELECCIÓN DE CLAN:</b>
+• <b>Clan elegido:</b> ${clan}
+• <b>Postulación a Líder:</b> ${postulacionLider}
+• <b>Propuesta de Líder:</b> ${propuestaLider}
+
+🎮 <b>PERFIL DE JUGADOR:</b>
+• <b>Tiempo en Bedrock:</b> ${tiempoJugando}
+• <b>Horas a la semana:</b> ${horasSemanales} hrs
+• <b>Nivel de habilidad (1-10):</b> ${nivelHabilidad}
+• <b>Especialidades:</b> ${especialidades}
+• <b>Estilo de juego:</b> ${estiloJuego}
+
+🧩 <b>ADDONS SUGERIDOS:</b>
+• ${addonsVotados}
+• <b>Otra sugerencia:</b> ${otroAddon}
+
+⚖️ <b>COMPROMISO Y REGLAS:</b>
+• <b>Horarios:</b> ${horarios}
+• <b>Acepta Reglas:</b> ${aceptaReglas}
+• <b>Reacción ante conflictos:</b> ${reaccionConflicto}
+• <b>Notas adicionales:</b> ${notasAdicionales}
+  `;
+
+  // Endpoint de la API de Telegram
+  const endpoint = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+
+  try {
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: textoMensaje,
+        parse_mode: 'HTML'
+      })
+    });
+
+    if (response.ok) {
+      alert('¡Tu postulación ha sido enviada con éxito!');
+      document.getElementById('formularioReclutamiento').reset(); // Reinicia los campos del formulario
+    } else {
+      alert('Ocurrió un error al enviar el formulario. Revisa los IDs de los elementos HTML.');
+    }
+  } catch (error) {
+    console.error('Error al conectar con Telegram:', error);
+    alert('Error de conexión con el servidor de Telegram.');
+  }
+});
+
+</script>
+</body>
+</html>
